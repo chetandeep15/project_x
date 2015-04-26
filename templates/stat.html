@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Stats</title>
+</head>
+<body>
+	<h1>Share Statistics for {{ name }}</h1>
+	<ul>
+		<li>
+			<b>Mean Opening Value : </b>{{ avg_op }}
+		</li>
+		<li>
+			<b>Mean Closing Value : </b> {{ avg_cl }}
+		</li>
+		<li>
+			<b>Maximum Value : </b> {{ max }}
+		</li>
+		<li>
+			<b>Minimum Value : </b> {{ min }}
+		</li>
+		<li>
+			<b>Mean Change : </b> {{ d }}
+		</li>
+		<li>
+			<b>Correlation with NASDAQ : </b> {{ corr }}
+		</li>
+		<li>
+			<b>Variance :</b>
+			<ul>
+				<li>Opening : {{ var_o }}</li>
+				<li>Closing : {{ var_c }}</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
