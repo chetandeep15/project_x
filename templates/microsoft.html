@@ -1,7 +1,18 @@
 <html>
-<head>{% block title %}Microsoft Corporation{% endblock %}</head>
-	
+<head><title>Microsoft</title>
+	{% load static from staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'style.css' %}"></head>
+	</head>
 <body>
+	<div id="tabs">
+	<li><a href="/"><span>Home</span></a></li>
+	<li><a href="/company/adobe"><span>Adobe</span></a></li>
+	<li><a href="/company/apple"><span>Apple</span></a></li>
+	<li><a href="/company/google"><span>Google</span></a></li>
+	<li><a href="/company/microsoft"><span>Microsoft</span></a></li>
+	<li><a href="/company/oracle"><span>Oracle</span></a></li>
+	<li><a href="/logout"><span>Logout</span></a></li>
+</div>
 <h2>About Microsoft Corporation</h2><br>
 <p>Microsoft Corporation is an American multinational corporation headquartered in Redmond, Washington, that develops, manufactures, licenses, supports and sells computer software, consumer electronics and personal computers and services. Its best known software products are the Microsoft Windows line of operating systems, Microsoft Office office suite, and Internet Explorer web browser. Its flagship hardware products are the Xbox game consoles and the Microsoft Surface tablet lineup. It is the world's largest software maker measured by revenues. It is also one of the world's most valuable companies.
 

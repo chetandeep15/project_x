@@ -1,25 +1,40 @@
 <html>
 
 <head>
-
+<title>Register User</title>
+{% load static from staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'loginstyle.css' %}">
 </head>
 
 <body>
 
-<div style="width:800px; margin-top:10 cm; margin:0 auto;">
+<div class="login-02">
+<div class="two-login  hvr-float-shadow">
+<div class="two-login-head">
+					<img src="{%static "top_note.png" %}" alt=""/>
+					<h2>New User</h2>
+					<lable></lable>
 
-	<h1>New User</h1>
+	</div>
 
-    <form method="POST" class="post-form">
+    <form method="POST" >
 
     {% csrf_token %}
 
-        {{ form.as_p }}
+        <li>{{ form.first_name }}<a href="#" class=" icon2 user2"></a></li>
+        <li>{{ form.last_name }}<a href="#" class=" icon2 user2"></a></li>
+        <li>{{ form.username }}<a href="#" class=" icon2 user2"></a></li>
+        <li>{{ form.email }}<a href="#" class=" icon2 mail"></a></li>
+        <li>{{ form.password }}<a href="#" class=" icon2 lock2"></a></li>
 
-        <button type="submit" class="save btn btn-default">Register</button>
+        <div class="submit two">
+						<input type="submit" value="SIGN UP" >
+				</div>
 
     </form>
+</div>
 
 </div>
 
 </body>
+</html>

@@ -13,6 +13,9 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_PATH = os.path.dirname(__file__)
+SITE_ROOT = BASE_PATH
+STATIC_DOC_ROOT = BASE_PATH+'/static'
 
 TEMPLATE_DIRS = (
 
@@ -20,7 +23,9 @@ TEMPLATE_DIRS = (
 
 )
 
-
+STATICFILES_DIRS = (
+    '/home/srai/project_x/static',
+)
 
 # Quick-start development settings - unsuitable for production
 
@@ -101,7 +106,7 @@ DATABASES = {
 
         'USER':'root',
 
-        'PASSWORD':'abcd1060',
+        'PASSWORD':'',
 
     }
 

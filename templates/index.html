@@ -3,12 +3,24 @@
 	<title>
 		Project_x
 	</title>
+	{% load static from staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'indexstyle.css' %}">
 </head>
-<body>
-	<h1>
-		Welcome to Project X
-	</h1>
-	<p>New user?.<br/><a href="/register"> Register Here </a></p>
-	<p>Existing User?<br/><a href="/login">Login</a></p>
+<body background="{% static "stockMarket.jpg" %}">
+<div class="header">
+			<div class="center">
+				<div class="wrapper">
+	<div id="logo">
+						<a href="/">Stock Market Predictor</a>					
+						</div>
+					<div class="right">
+					<ul class="nav">
+	<li class =""><a href="/register"> Register Here </a></li>
+	<li class=""><img class="" src={% static "nav_li_img.png" %} alt=""></li>
+	<li class =""><a href="/login">Login</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
 </body>
 </html>

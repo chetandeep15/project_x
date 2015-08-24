@@ -4,6 +4,6 @@ from django.contrib.auth.models import User
 
 class Login_Form(forms.Form):
 
-	uname=forms.CharField(label="Enter your username ")
+	uname=forms.CharField(label="Username", widget=forms.TextInput(attrs={'class' : 'text','class':' user','placeholder': 'Username'}))
 
-	upass=forms.CharField(widget=forms.PasswordInput(),label="Enter your password ")
+	upass=forms.CharField(widget=forms.PasswordInput(attrs={'class':'lock','placeholder': 'Password'}),label="Password ",)

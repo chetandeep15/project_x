@@ -1,0 +1,110 @@
+
+.two-login-head{
+	background: #702c91;
+	padding: 1em 1em;
+	text-align:center;
+	position: relative;
+}
+.two-login-head h2 {
+font-size: 2em;
+color: #fff;
+font-weight: 500;
+text-transform: uppercase;
+}
+.two-login-head lable{
+	background: url('../images/tip2.png') no-repeat 0px 0px;
+	width: 30px;
+	height: 13px;
+	position: absolute;
+	bottom: -11px;
+	left: 203px;
+	display: inline-block;
+}
+.two-login h5,.two-login h5 a{
+	color: #848484;
+	font-size: 16px;
+}
+.two-login h5 a{
+	font-weight: 600;
+}
+.two-login h5 a:hover{
+	text-decoration: underline;
+}
+.two-login{
+width:28%;
+margin:5% auto;
+background: #fff;
+text-align: center;
+border-bottom: 3px solid#1c817c;
+}
+.two-login-head h1 {
+font-size: 2em;
+color: #fff;
+font-weight:500;
+}
+form.two {
+	padding: 12% 9%;
+}
+form.two li{
+	border:none;
+	list-style:none;
+	margin-bottom:25px;
+	width:100%;
+	background:#dfdfdf;
+}
+.login-02 {
+margin-top: 9em;
+}
+.icon2{
+height:45px;
+width: 46px;
+display: block;
+float: left;
+margin: 1px -13px 0px 0px;
+}
+
+.user2{
+	background: url(../images/icon2.png) no-repeat 0px -1px #702c91;
+	
+}
+.lock2{
+	background: url(../images/icon2.png) no-repeat -49px 0px #702c91;
+}
+.mail{
+	background: url(../images/icon2.png) no-repeat -99px 0px #702c91;
+}
+form.two input[type="text"],form.two input[type="password"] {
+	width: 60%;
+	padding: 0.8em 4em 0.8em 1.7em;
+	color: #858282;
+	font-size: 17px;
+	outline: none;
+	background: none;
+	font-weight: 500;
+	border: none;
+	}
+	.submit.two{
+		border: none;
+		padding: 41px 0 20px 0;
+	}
+.submit.two input[type="submit"]{
+	font-size: 20px;
+	font-weight: 400;
+	color: #fff;
+	cursor: pointer;
+	outline: none;
+	padding: 13px 10px;
+	width: 100%;
+	border: none;
+	background: #702c91;
+}
+.submit.two input[type="submit"]:hover{
+	background:#ffc50c;
+}
+.p-container a {
+color: #702C91;
+font-size: 15px;
+}
+.p-container a:hover{
+	text-decoration: underline;
+}

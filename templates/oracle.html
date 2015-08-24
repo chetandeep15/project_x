@@ -1,7 +1,18 @@
 <html>
-<head>{% block title %}Oracle Corporation{% endblock %}</head>
+<head>{% block title %}Oracle Corporation{% endblock %}	{% load static from staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'style.css' %}">
+</head>
 	
 <body>
+	<div id="tabs">
+	<li><a href="/"><span>Home</span></a></li>
+	<li><a href="/company/adobe"><span>Adobe</span></a></li>
+	<li><a href="/company/apple"><span>Apple</span></a></li>
+	<li><a href="/company/google"><span>Google</span></a></li>
+	<li><a href="/company/microsoft"><span>Microsoft</span></a></li>
+	<li><a href="/company/oracle"><span>Oracle</span></a></li>
+	<li><a href="/logout"><span>Logout</span></a></li>
+</div>
 <h2>About Oracle Corporation</h2><br>
 <p>The Oracle Corporation is an American multinational computer technology corporation headquartered in Redwood City, California, United States. The company specializes in developing and marketing computer hardware systems and enterprise software products – particularly its own brands of database management systems. As of 2011, Oracle is the second-largest software maker by revenue, after Microsoft.
 
