@@ -1,71 +1,85 @@
 <html>
 
-<head><title>Apple Inc.</title></head>
+<head><title>Apple Inc.</title>
+	{% load static from staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'style.css' %}">
+	</head>
 	
-<body>
+<body id="b">
+    <div id="tabs">
+	<li><a href="/"><span>Home</span></a></li>
+	<li><a href="/company/adobe"><span>Adobe</span></a></li>
+	<li><a href="/company/apple"><span>Apple</span></a></li>
+	<li><a href="/company/google"><span>Google</span></a></li>
+	<li><a href="/company/microsoft"><span>Microsoft</span></a></li>
+	<li><a href="/company/oracle"><span>Oracle</span></a></li>
+	<li><a href="/logout"><span>Logout</span></a></li>
+</div>
+<div id="container">
+<div id="header"><h1>About Apple Inc</h1></div>
+<div id="extra">
+<p id="p">
 
-<h1>About Apple Inc</h1>
+<b>Type : </b>Electronics and Software<br/><br><br>
 
-<p>
+<b>Nationality : </b> United States of America<br/><br><br>
 
-<b>Type : </b>Electronics and Software<br/>
+<b>Headquaters : </b>Cupertino, California<br/><br><br>
 
-<b>Nationality : </b> United States of America<br/>
+<b>Focus : </b>Consumer Electronics, Computer Software, Online Services and Personal Computers<br><br>
 
-<b>Headquaters : </b>Cupertino, California<br/>
+<b>Hardware Products : </b>Mac line of computers, iPod media player, iPhone smartphone and iPad tablet computer.<br><br>
 
-<b>Focus : </b>Consumer Electronics, Computer Software, Online Services and Personal Computers<br/>
+<b>Software Products : </b>OS X and iOS operating systems and iTunes media browser<br/><br/>
 
-<b>Hardware Products : </b>Mac line of computers, iPod media player, iPhone smartphone and iPad tablet computer.
-<br/>
+<b>Online Services : </b>iCloud, iTunes Store and App Store<br><br>
+<b>Key People :</b> Arthur D. Levinson (Chairman)<br>Tim Cook (CEO)<br><br>
+<b>Revenue :</b>US$ 182.795 billion (2014)<br><br><br>
+</p>
+</div>
 
-<b>Software Products : </b>OS X and iOS operating systems and iTunes media browser<br/>
 
-<b>Online Services : </b>iCloud, iTunes Store and App Store<br/>
+<div id="wrapper">
+<p id="p">
+
+
+<h2 id="h"><b>History</b></h2>
 
 </p>
 
-<p>
 
-<h2>History</h2>
-
-</p>
-
-<p>
+<div id="content">
+<p id="p">
 
 Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne on April 1, 1976, to develop and sell personal computers.<br/>It was incorporated as Apple Computer, Inc. on January 3, 1977, and was renamed as Apple Inc. on January 9, 2007, to reflect its shifted focus towards consumer electronics.<br/>Apple (NASDAQ:APPL) joined the Dow Jones Industrial Average on March 19, 2015.
 
 </p>
+</div>
+</div>
 
-<p>
 
-<h2>Recent Milestones</h2>
+<div id="wrapper">
+
+<p id="p">
+	
+<h2 id="h">Recent Milestones</h2>
 
 </p>
 
-<p>
+<div id="content">
+<p id="p">
 
 Apple is the world's second-largest information technology company by revenue after Samsung Electronics, and the world's third-largest mobile phone maker.<br>On November 25, 2014, in addition to being the largest publicly traded corporation in the world by market capitalization, Apple became the first U.S. company to be valued at over $700 billion.<br>As of 2014, Apple employs 72,800 permanent full-time employees, maintains 437 retail stores in fifteen countries, and operates the online Apple Store and iTunes Store, the latter of which is the world's largest music retailer.<br>
 
 </p>
+</div>
+</div>
+<div id="navigation">
 
-<p>
+<ul><a href="/stats/apple">Apple Inc. Statistics</a></ul>
+</div>
 
-<h2>Key people</h2>
 
-</p>
-
-<p>
-
-Arthur D. Levinson (Chairman)<br>
-Tim Cook (CEO)
-
-</p>
-
-<h2>Revenue</h2>
-US$ 182.795 billion (2014)<br><br>
-
-<a href="/stats/apple">Apple Inc. Statistics</a>
-
+</div>
 </body>
 </html>

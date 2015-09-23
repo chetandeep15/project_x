@@ -1,41 +1,62 @@
 <html>
-<head>{% block title %}Adobe Systems Incorporated{% endblock %}</head>
+<head><title>Adobe Systems Incorporated</title>
+	{% load static from staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'style.css' %}">
+	</head>
 	
-<body>
+<body id ="b">
+	<div id="tabs">
+	<li><a href="/"><span>Home</span></a></li>
+	<li><a href="/company/adobe"><span>Adobe</span></a></li>
+	<li><a href="/company/apple"><span>Apple</span></a></li>
+	<li><a href="/company/google"><span>Google</span></a></li>
+	<li><a href="/company/microsoft"><span>Microsoft</span></a></li>
+	<li><a href="/company/oracle"><span>Oracle</span></a></li>
+	<li><a href="/logout"><span>Logout</span></a></li>
+</div>
+<div id="container">
+<div id="header">
+<h1>About Adobe Systems Incorporated</h1></div>
+<div id="extra">
+<p id="p">
 
-<h1>About Adobe Systems Incorporated</h1><br>
+<b>Type : </b>Software Company<br><br>
 
-<p>
+<b>Nationality : </b> United States of America<br><br>
 
-<b>Type : </b>Software Company<br/>
+<b>Headquaters : </b>San Jose, California<br><br>
 
-<b>Nationality : </b> United States of America<br/>
+<b>Focus : </b>Multimedia and Creativity Software<br><br>
 
-<b>Headquaters : </b>San Jose, California<br/>
+<b>Famous Products : </b>Photoshop, The Portable Document Format (PDF) and Adobe Creative Suite<br><br>
 
-<b>Focus : </b>Multimedia and Creativity Software<br/>
+<b>Key people : </b>Charles Geschke(Co-Chairman)<br>John Warnock(Co-Chairman)<br>Shantanu Narayen(President and CEO)<br><br>
 
-<b>Famous Products : </b>Photoshop, The Portable Document Format (PDF) and Adobe Creative Suite<br/>
+<b>Revenue :</b>US$ 4,055.24 million (2013)<br><br><br>
+</p>
+</div>
+<div id="wrapper">
+<p id="p">
 
-<h2>History</h2>
 
+<h2 id="h"><b>History</b></h2>
+
+</p>
+<div id="content">
+<p id="p">
 Adobe was founded in February 1982 by John Warnock and Charles Geschke, who established the company after leaving Xerox PARC in order to develop and sell the PostScript page description language.<br/> In 1985, Apple Computer licensed PostScript for use in its LaserWriter printers, which helped spark the desktop publishing revolution.
 
 </p>
-<p>
-<h2>Key people</h2>
-Charles Geschke
-(Co-Chairman)<br/>
-John Warnock
-(Co-Chairman)<br/>
-Shantanu Narayen
-(President and CEO)<br/>
-</p>
 
-<h2>Revenue</h2>
-US$ 4,055.24 million (2013)<br><br>
+</div>
+</div>
 
-<a href="/stats/adobe">Adobe Systems Incorporated Statistics</a>
+<div id="navigation">
+<ul><a href="/stats/adobe">Adobe Systems Incorporated Statistics</a></ul>
+</div>
+
+
+</div>
 
 </body>
 </html>

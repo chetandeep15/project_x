@@ -35,6 +35,8 @@ def login_user(request):
 				else :
 
 					return redirect("/")
+			else :
+				return redirect("/")
 
 	else:
 

@@ -3,16 +3,23 @@
 	<title>
 		Homepage
 	</title>
+	{% load static from staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'style.css' %}">
+	
 </head>
 <body>
-	<p>Welcome {{ user.username }}</p>
-	<p> Your last login was on {{ user.last_login }}</p>
-	<p>Choose a company</p>
-	<a href="/company/adobe">Adobe</a>
-	<a href="/company/apple">Apple</a>
-	<a href="/company/google">Google</a>
-	<a href="/company/microsoft">Microsoft</a>
-	<a href="/company/oracle">Oracle</a><br/>
-	<a href="/logout">Logout</a>
+	<h1>Welcome {{ user.username }}</h1>
+	<h2> Your last login was on {{ user.last_login }}</h2>
+	<h3>Choose a company</h3>
+<div id="tabs">
+	<li><a href="/"><span>Home</span></a></li>
+	<li><a href="/company/adobe"><span>Adobe</span></a></li>
+	<li><a href="/company/apple"><span>Apple</span></a></li>
+	<li><a href="/company/google"><span>Google</span></a></li>
+	<li><a href="/company/microsoft"><span>Microsoft</span></a></li>
+	<li><a href="/company/oracle"><span>Oracle</span></a></li>
+	<li><a href="/logout"><span>Logout</span></a></li>
+	
+</div>
 </body>
 </html>

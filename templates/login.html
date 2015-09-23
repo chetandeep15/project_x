@@ -3,12 +3,28 @@
 	<title>
 		Login
 	</title>
+	{% load static from staticfiles %}
+	<link rel="stylesheet" type="text/css" href="{%static 'loginstyle.css' %}">
 </head>
 <body>
+<div class="login-01">
+	<div class="one-login  hvr-float-shadow">
+			<div class="one-login-head">
+					<img src="{% static "top-lock.png" %}" alt=""/>
+					<h1>LOGIN</h1>
+					<span></span>
+			</div>
 	<form action="" method="post">
 		{% csrf_token %}
-		{{ form.as_p }}
-		<button type="submit">Login</button>
+		<li>{{ form.uname}}<a href="#" class=" icon user"></a></li>
+		<li>{{form.upass}}<a href="#" class=" icon lock"></a></li>
+		
+
+		<div class="submit">
+		<input type="submit"  value="SIGN IN" >
+		</div>
 	</form>
+	</div>
+	</div>
 </body>
 </html>
